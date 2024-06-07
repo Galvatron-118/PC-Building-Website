@@ -1,0 +1,155 @@
+
+@media(max-width:1300px){
+    .header_wrapper .menu-navbar-nav{
+        width:auto;
+    }
+    .pcbuilder_wrapper .pcbuilder_img{ 
+        margin-left: 0px;
+    }
+    .price_wrapper .price_title {
+        font-size: 20px;
+     }
+     .price_wrapper .price_desc{ 
+        font-size: 10px;
+     }
+     .price_wrapper .price_text{ 
+        font-size: 5px;
+     }
+        
+}
+
+@media(max-width:1230px){
+    .header_wrapper .nav-item{
+        margin:0 4px;
+        
+    }
+    .header_wrapper .learn-more-btn{
+        padding:12px 10px !important
+    }
+
+    .banner_wrapper .banner-title{
+        font-size: 50px;
+    }
+    .pcbuilder_wrapper .pcbuilder_img{ 
+        margin-left: 0px;
+    }
+    .price_wrapper .price_title {
+        font-size: 20px;
+     }
+     .price_wrapper .price_desc{ 
+        font-size: 10px;
+     }
+     .price_wrapper .price_text{ 
+        font-size: 5px;
+     }  
+     }
+     
+    
+   
+    
+
+@media(max-width:1200px){
+     
+}
+
+@media(max-width:1070px){
+    .header_wrapper .nav-item .nav-link{
+       font-size: 16px;
+    }
+    .pcbuilder_wrapper .pcbuilder_img{ 
+        margin-left: 0px;
+    }
+    .guides_wrapper .row{
+        flex-direction: column-reverse;
+     }
+     .price_wrapper .price_title {
+        font-size: 20px;
+     }
+     .price_wrapper .price_desc{ 
+        font-size: 10px;
+     }
+     .price_wrapper .price_text{ 
+        font-size: 5px;
+     }
+     
+     
+}
+
+@media(max-width:991px){
+    .header_wrapper .navbar-brand img{
+       width:180px;
+    }
+    .header_wrapper .navbar-toggler:focus .navbar-toggler:active .navbar-toggler-icon:focus{
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
+    .header_wrapper .menu-navbar-nav{
+        text-align: center;
+        
+    }
+    .header_wrapper .nav-item .nav-link{
+       margin-top: 15px;
+       font-size: 18px;
+       
+    }
+    .header_wrapper .nav-item:last-child .nav-link{
+        margin-bottom: 20px;
+    }
+    .header_wrapper .learn-more-btn{
+        padding:12px 29px !important;
+    }
+    .header_wrapper .navbar-collpase{
+        background: var(--bg-white);
+    }
+    .banner_wrapper .banner-title{
+        font-size: 36px;
+    }
+    .pcbuilder_wrapper .pcbuilder_img{ 
+        margin-left: 0px;
+    }
+    .guides_wrapper .row{
+        flex-direction: column-reverse;
+     }
+     .price_wrapper .price_title {
+        font-size: 20px;
+     }
+     .price_wrapper .price_desc{ 
+        font-size: 10px;
+     }
+     .price_wrapper .price_text{ 
+        font-size: 5px;
+     }
+     
+}
+@media(max-width :767px){
+    .banner_wrapper {
+        padding :100px 0 100px
+    }
+    .banner_wrapper .row{
+       flex-direction: column-reverse;
+    }
+    .banner_wrapper .learn-more-btn-section{
+        justify-content: center;
+     }
+     .pcbuilder_wrapper .pcbuilder_img{ 
+        margin-left: 0px;
+    }
+    .guides_wrapper .row{
+        flex-direction: column-reverse;
+     }
+     .banner_wrapper .row{
+        flex-direction: column-reverse;
+     }
+     .price_wrapper .price_title {
+        font-size: 20px;
+     }
+     .price_wrapper .price_desc{ 
+        font-size: 10px;
+     }
+     .price_wrapper .price_text{ 
+        font-size: 5px;
+     }
+   
+}
+
