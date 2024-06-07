@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compitable" content="ie-edge">
+    <meta name="Description" content="Enter your description here"/>
+    <title>Sign Up</title>
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="/static/images/cattotech.png">
+
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  
+    <!--Custom Css File Link-->
+    <link rel="stylesheet" href="/static/css/style2.css">
+    <link rel="stylesheet" href="/static/css/responsive-style.css">
+<style>
+
+
+
+</style>
+</head>
+
+<body>
+  {% block content %}
+    <section class="login_wrapper">
+        <div class="container">
+            <div class="col-sm-8 offset-sm-2 col-lg-8 offset-lg-4 col-xl-4 text-center">
+                <div class="logo">
+                    <img src="/static/images/cattotech-company-logo.png" class="img-fluid" alt="logo">
+                </div>
+                <form class="rounded bg-white shadow p-5" action ="" method="post">
+                  {% csrf_token %}
+                    <h3 class="text-dark fw-bolder fs-4  mb-2">Create an Account</h3>
+                    <div class="fw-normal text-muted mb-2">
+                        Already have an Account? <a href="http://127.0.0.1:8000/login/" class="text-primary fw-bold text-decoration-none">Sign in here</a>
+                    </div>
+                    <div class="text-center text-muted text-uppercase my-2">OR</div>
+                   
+                    <a href="#" class="btn btn-light login_with w-100 mb-4">
+						<img decoding="async" src="/static/images/google-icon.svg" class="img-fluid me-3">Sign Up with Google</a>
+            <a href="#" class="btn btn-light login_with w-100 mb-4">
+              <img decoding="async" src="/static/images/facebook-icon.svg" class="img-fluid me-3">Sign Up with Facebook</a>
+              <a href="#" class="btn btn-light login_with w-100 mb-4">
+                <img decoding="async" src="/static/images/apple.svg" class="img-fluid me-3">Sign Up with Apple</a>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="username" placeholder="username" name="username">
+                        <label for="username">User Name</label>
+                      </div>
+                      
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="email" name="email">
+                        <label for="email">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="password" placeholder="password" name="password">
+                        <label for="password">Password</label>
+                        <span class="password-info mt-2">Use minimum 8 Character with Uppercase, Lowercase & Special Character</span>
+                      </div>
+                    <!--  <div class="form-floating">
+                        <input type="password" class="form-control" id="confirmpassword" placeholder="confirmpassword" name="confirmpassword">
+                        <label for="confirmpassword">Confirm Password</label>
+                      </div>-->
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+                        <label class="form-check-label ms-2 my-2" for="gridCheck">
+                          I Agree to <a href="#">Terms and conditions</a>.
+                        </label>
+                    </div>
+
+
+                      <button type="submit" class="btn btn-primary submit_btn w-100 my-4"  onclick="window.location('login/')">Sign Up</button>
+                      
+                </form>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+    <!--jQuery CDN Link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <!--Bootstrap JS cdn link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <!-- Owl Carousel JS Link-->
+    <script src="./js/owl/dist/owl.carousel.js"></script>
+
+    <!--Custom Js link-->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

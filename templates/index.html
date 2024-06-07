@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+
+
+{% load static %} {% block content %}
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compitable" content="ie-edge">
+    <meta name="Description" content="Enter your description here"/>
+    <title>CattoTech</title>
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="/static/images/cattotech.png">
+
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Owl CSS Link -->
+    <link rel="stylesheet" href="./css/owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl/dist/assets/owl.theme.default.min.css">
+
+    <!--Custom Css File Link-->
+    <link rel="stylesheet" href="/static/css/responsive-style.css">
+    <link rel="stylesheet" href="/static/css/pcbuilder.css">
+    
+
+<style media="screen">
+
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.p .catto{
+    text-decoration-style: dashed;
+}
+
+
+
+.navbar-input {
+    padding: 11px 16px;
+    border-radius: 2px 0 0 2px;
+    border: 0 none;
+    outline: 0 none;
+    font-size: 15px
+}
+
+.navbar-button {
+    background-color: #ffe11b;
+    border: 1px solid #ffe11b;
+    border-radius: 0 2px 2px 0;
+    color: #565656;
+    padding: 10px 0;
+    height: 43px;
+    cursor: pointer
+}
+
+.cart-button {
+    background-color: #808080;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
+    padding: 10px 0;
+    text-align: center;
+    height: 41px;
+    border-radius: 2px;
+    font-weight: 500;
+    width: 120px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none
+}
+
+.cart-button:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer
+}
+
+.cart-svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 8px
+}
+
+.item-number {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .1);
+    height: 20px;
+    padding: 3px 6px;
+    font-weight: 500;
+    display: inline-block;
+    color: #fff;
+    line-height: 12px;
+    margin-left: 10px
+}
+
+.upper-links {
+    display: inline-block;
+    padding: 0 11px;
+    line-height: 23px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: inherit;
+    border: none;
+    outline: none;
+    font-size: 12px
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0px
+}
+
+.dropdown:hover {
+    background-color: #fff
+}
+
+.dropdown:hover .links {
+    color: #000
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    background-color: #fff;
+    color: #333;
+    left: 0px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 4px 8px -3px #555454;
+    margin: 0;
+    padding: 0px
+}
+
+.links {
+    color: #fff;
+    text-decoration: none
+}
+
+.links:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.profile-links {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 11px;
+    line-height: 23px
+}
+
+.profile-li {
+    padding-top: 2px
+}
+
+.largenav {
+    display: none
+}
+
+.smallnav {
+    display: block
+}
+
+.smallsearch {
+    margin-left: 15px;
+    margin-top: 15px
+}
+
+.menu {
+    cursor: pointer
+}
+
+
+
+   
+    
+    .d-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .align-center {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    .flex-centerY-centerX {
+        justify-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+   
+    
+   
+    
+   
+    
+    .el-wrapper {
+        width: 360px;
+        padding: 15px;
+        margin: 15px auto;
+        background-color: #fff;
+    }
+    
+    
+    .el-wrapper:hover .h-bg {
+        left: 0px;
+    }
+    
+    .el-wrapper:hover .price {
+        left: 20px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #818181;
+    }
+    
+    .el-wrapper:hover .add-to-cart {
+        left: 50%;
+    }
+    
+    .el-wrapper:hover .img {
+        -webkit-filter: blur(7px);
+        -o-filter: blur(7px);
+        -ms-filter: blur(7px);
+        filter: blur(7px);
+        filter: progid: DXImageTransform.Microsoft.Blur(pixelradius='7', shadowopacity='0.0');
+        opacity: 0.4;
+    }
+    
+    .el-wrapper:hover .info-inner {
+        bottom: 155px;
+    }
+    
+    .el-wrapper:hover .a-size {
+        -webkit-transition-delay: 300ms;
+        -o-transition-delay: 300ms;
+        transition-delay: 300ms;
+        bottom: 50px;
+        opacity: 1;
+    }
+    
+    .el-wrapper .box-down {
+        width: auto;
+        height: 60px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .el-wrapper .box-up {
+        width: auto;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .el-wrapper .img {
+        padding: 20px 0;
+        -webkit-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+        -moz-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+        -o-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+        transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+    }
+    
+
+    
+    .h-bg .h-bg-inner {
+        width: 50%;
+        height: 100%;
+        background-color: #464646;
+    }
+    
+    .info-inner {
+        -webkit-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+        -moz-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+        -o-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+        transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        position: absolute;
+        width: 100%;
+        bottom: 25px;
+    }
+    
+    .info-inner .p-name,
+    .info-inner .p-company {
+        display: block;
+    }
+    
+    .info-inner .p-name {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 18px;
+        color: #252525;
+    }
+    
+    .info-inner .p-company {
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #FFE11B;
+    }
+    
+    .a-size {
+        -webkit-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+        -moz-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+        -o-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+        transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        position: absolute;
+        width: 100%;
+        bottom: -20px;
+        font-family: 'PT Sans', sans-serif;
+        color: #828282;
+        opacity: 0;
+    }
+    
+    .a-size .size {
+        color: #252525;
+    }
+    
+    .cart {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+    }
+    .cart-button {
+    background-color: #808080;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
+    padding: 10px 0;
+    text-align: center;
+    height: 41px;
+    border-radius: 2px;
+    font-weight: 500;
+    width: 120px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none
+}
+
+.cart-button:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer
+}
+
+.cart-svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 8px
+}
+
+    
+    /*.cart .price {
+        -webkit-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+        -moz-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+        -o-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+        transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        /*-webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        /*-webkit-transition-delay: 100ms;
+        -o-transition-delay: 100ms;
+        transition-delay: 100ms;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+        color: #252525;
+    }*/
+    
+    .cart .add-to-cart {
+        -webkit-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+        -moz-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+        -o-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+        transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+        /* ease-out */
+        -webkit-transition-delay: 100ms;
+        -o-transition-delay: 100ms;
+        transition-delay: 100ms;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 110%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .cart .add-to-cart .txt {
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: 0.045em;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    
+    
+    /* Create three equal columns that floats next to each other */
+    
+    
+    /* Clear floats after the columns */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+.card{
+    font-family: 'Poppins',sans-serif;
+    align-items:center;
+    justify-content:center;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+   
+  
+}
+.card-title{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align: center;
+}
+.card-text{
+  text-align: center;
+}    
+  
+</style>
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85">
+    
+    <!-- Navbar section -->
+
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top"  style="background-color: aliceblue;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://127.0.0.1:8000/#home">
+                    <img src="/static/images/cattotech-company-logo.png" class="img-fluid" alt="company-logo" width="1000px">
+                </a>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> --> 
+                <i class="fa-sharp fa-solid fa-bars-staggered fa-lg" style="color: #000000;"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/#home">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <form action="http://127.0.0.1:8000/product/cpu/search/" method="get" class="d-flex" role="search">
+                                <input class="form-control me-2" data-bs-theme="light" type="search" name="query" placeholder="Keywords..." id="query" aria-label="Search">
+                                <button class="btn btn-dark" data-bs-theme="dark" type="submit">Search</button>
+                            </form>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="http://127.0.0.1:8000/pcbuilderpage/">PC Builder</a>
+                        </li>
+   
+                    </ul>
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item"> 
+                            <a class="cart-button" href="http://127.0.0.1:8000/product/cart/" style="margin-top: 15px;">
+                                <svg class="cart-svg " width="16 " height="16 " viewBox="0 0 16 16 ">
+                                    <path d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86 " fill="#fff "></path>
+                                </svg>Cart
+                                <span class="item-number ">{{ product_count_in_cart }}</span> 
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item text-center" style="margin-top: 15px; font-weight: 800;">
+                            {% if user.is_authenticated %}
+                            Welcome, {{ user.username }}!&nbsp
+                            </li>
+                            <li>
+                              <a class="nav-link learn-more-btn btn-extra-header" href="{% url 'logout' %}">Logout</a></li>
+                        {% else %}
+                        <p><a class="nav-link learn-more-btn btn-extra-header" href="{% url 'login' %}" style="text-decoration: none;">Login</a> <a class="nav-link learn-more-btn " href="{% url 'signup' %}" style="text-decoration: none;">Register</a></p>
+                        {% endif %}
+                        </li>
+          
+                      </ul>
+              </div>
+              
+            </div>
+          </nav>
+    </header>
+
+    <!-- Navbar section ends -->
+
+<!--Title CPU start-->
+<div class="cpu_wrapper">
+    <div class="brands">
+        <div class="container">
+            <div class="col-12 text-center">
+                <h1 class="cpu_title">CPUs</h2>
+            </div>
+           
+        </div>
+    </div>
+</div>
+    
+
+<div class="guides_wrapper">
+    <div class="container">
+        
+       
+                    {%if products%}
+
+
+                    <!-- products data start -->
+                    <div class="row">
+                        {% for p in products %}
+                        <div class="col-sm-2 py-3  col-lg-2 col-md-3 text-center text-lg-center ">
+                             <div class="card">
+                                 <img src="{% static p.product_image.url %}" class="card-img" alt="..." >
+                                 <div class="card-body">
+                                   <h5 class="card-title">{{p.name}}</h5>  
+                                   <p class="card-text">৳ {{p.price}}</p>
+                                   <h5 class="card-text" style="color: orangered;">{{p.stock}}</h5>
+                                   <a href="{% url 'add-to-cart' p.id  %}" class="btn btn-primary">Add</a>
+                                 </div>
+                               </div> 
+                     </div>
+                            
+                            
+                        
+                        {% endfor %}
+                        
+                    </div>
+                    
+                        
+
+   
+                        <!-- card end -->
+
+                    <!-- products data end -->
+                    {%else%}
+                    <h3 style="text-align:center; color:black; padding-bottom: 55px; padding-top: 30px;">Not Found</h3>
+                    {%endif%}
+
+                    
+
+
+
+                    {% endblock content %}
+
+    </div>
+
+</div>
+
+<!--Footer Section Start-->
+<section id="#footer" class="footer_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 footer_logo mb-4 mb-lg-0">
+                <img decoding="async" src="/static/images/cattotech-company-logo.png">
+                <p class="footer_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="col-lg-4 px-lg-5 mb-4 mb-lg-0">
+                <h3 class="footer_title">Contact</h3>
+                <p class="footer_text">
+                    <a href="#">02-9XXXXXX</a><br>
+                    <a href="#">info.services.cattotech@gmail.com</a><br>
+                    <a href="#" class="footer-address">112 / 200 Multiplan <br>Elephant Road, 123456, Dhaka, Bangladesh</a>
+                </p>
+            </div>
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <h3 class="footer_title">Social Media</h3>
+                <p>
+                    <a href="#" class="footer_social_media_icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer_social_media_icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer_social_media_icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="footer_social_media_icon"><i class="fa-brands fa-youtube"></i></a>
+                    
+                </p>
+            </div>
+            <div class="col-12 footer_credits text-center">
+                <span>© 2023 <a href="#" target="_blank">CattoTech</a>™. All Rights Reserved.</span>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  
+  <!--Footer Section End-->
+
+
+
+
+
+
+
+
+   
+        
+          
+ 
+    
+    <!--jQuery CDN Link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <!--Bootstrap JS cdn link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <!-- Owl Carousel JS Link-->
+    <script src="./js/owl/dist/owl.carousel.js"></script>
+
+    <!--Custom Js link-->
+    <script src="./js/main.js"></script>
+    <!--CSV loader-->
+    <!--script src="./csv.js"></script-->
+    
+
+</body>
+
+</html>

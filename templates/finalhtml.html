@@ -1,0 +1,252 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compitable" content="ie-edge">
+    <meta name="Description" content="Enter your description here"/>
+    <title>CattoTech</title>
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="/static/images/cattotech.png">
+
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Owl CSS Link -->
+    <link rel="stylesheet" href="./css/owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl/dist/assets/owl.theme.default.min.css">
+
+    <!--Custom Css File Link-->
+    <link rel="stylesheet" href="/static/css/responsive-style.css">
+    <link rel="stylesheet" href="/static/css/pcbuilder.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+<style>
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.p .catto{
+    text-decoration-style: dashed;
+}
+
+
+
+</style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85">
+    <!-- Navbar section -->
+
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top"  style="background-color: aliceblue;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="http://127.0.0.1:8000/#home"><img src="/static/images/cattotech-company-logo.png" class="img-fluid" alt="company-logo" width="1000px"></a>
+              <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <span class="navbar-toggler-icon"></span> --> 
+              <i class="fa-sharp fa-solid fa-bars-staggered fa-lg" style="color: #000000;"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu-navbar-nav">
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/#home">Home</a>
+                  </li>
+                
+                
+                 
+                  <li class="nav-item">
+                    <form action="http://127.0.0.1:8000/product/search/" method="get" class="d-flex" role="search">
+                      <input class="form-control me-2" data-bs-theme="light" type="search" name="query" placeholder="Keywords..." id="query" aria-label="Search">
+                      <button class="btn btn-dark" data-bs-theme="dark" type="submit">Search</button>
+                    </form>
+                  </li>
+            
+                
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="http://127.0.0.1:8000/product/cart/">Cart</a>
+                  </li>
+                  </ul>
+
+                  <ul class="navbar-nav">
+                    <li class="nav-item text-center" style="margin-top: 15px; font-weight: 800;">
+                      {% if user.is_authenticated %}
+                      Welcome, {{ user.username }}!&nbsp
+                      </li>
+                      <li>
+                        <a class="nav-link learn-more-btn btn-extra-header" href="{% url 'logout' %}">Logout</a></li>
+                    {% else %}
+                    <p><a class="nav-link learn-more-btn btn-extra-header" href="{% url 'login' %}" style="text-decoration: none;">Login</a> <a class="nav-link learn-more-btn " href="{% url 'signup' %}" style="text-decoration: none;">Register</a></p>
+                    {% endif %}
+                    </li>
+      
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+    <section class="main-wrapper xs-col-12 pt-5 mt-5 ">
+      
+      <div id="partlist">
+      <div class="wrapper wrapper__pageTitle ">
+      <section class="xs-col-11 lg-col-9 xl-col-8 xs-mx-auto">
+      <h1 class="pageTitle">Choose Your Components</h1>
+      </section>
+      </div>
+      <div class="wrapper wrapper__pageContent">
+      <section class="actionBox__wrapper">
+      <div class="xs-col-11 lg-col-9 xl-col-8 xs-mx-auto">
+      
+        <div class="actionBox-2023 actionBox__permalink">
+      
+      
+      
+      
+      
+      </div>
+      </div>
+      </section>
+      <section class="main-content xs-col-11 lg-col-9 xl-col-8 xs-mx-auto">
+        <div class="row">
+                       
+          <div class="col-sm-2 py-3  col-lg-3 col-md-3 text-center text-lg-center ">
+                  <a href="http://127.0.0.1:8000/product/cpu" style="text-decoration:none">
+                   <div class="card align-items-center">
+                       <img src="/static/images/cpu.png" class="card-img padding" alt="processor" style="width: 200px">
+                       <div class="card-body">
+                         <div class="card-override"><h5 class="card-title">Processor</h5></div>  
+                       </div>
+                     </div> 
+                   </a>
+           </div>
+                                  
+           <div class="col-sm-2 py-3  col-lg-3 col-md-3 text-center text-lg-center ">
+             <a href="http://127.0.0.1:8000/product/cpucooler" style="text-decoration:none">
+              <div class="card align-items-center">
+                  <img src="/static/images/cooler.png" class="card-img padding" alt="cooler" style="width: 200px">
+                  <div class="card-body">
+                   <div class="card-override"><h5 class="card-title">Cooler</h5></div>   
+                  </div>
+                </div> 
+              </a>
+      </div>
+                                   
+      <div class="col-sm-2 py-3  col-lg-3 col-md-3 text-center text-lg-center ">
+       <a href="http://127.0.0.1:8000/product/motherboard" style="text-decoration:none">
+        <div class="card align-items-center">
+            <img src="/static/images/motherboard.png" class="card-img padding" alt="motherboard" style="width: 200px">
+            <div class="card-body">
+             <div class="card-override"><h5 class="card-title">Motherboard</h5></div>   
+            </div>
+          </div> 
+        </a>
+</div>
+                                 
+<div class="col-sm-2 py-3  col-lg-3 col-md-3 text-center text-lg-center ">
+ <a href="http://127.0.0.1:8000/product/memory" style="text-decoration:none">
+  <div class="card align-items-center">
+      <img src="/static/images/ram.png" class="card-img padding" alt="memory" style="width: 200px">
+      <div class="card-body">
+       <div class="card-override"><h5 class="card-title">Memory</h5></div>  
+      </div>
+    </div> 
+  </a>
+</div>
+                       
+<div class="col-sm-2 py-3  col-lg-3 col-md-3 text-center text-lg-center ">
+<a href="http://127.0.0.1:8000/product/storage" style="text-decoration:none" >
+<div class="card align-items-center">
+<img src="/static/images/storage.png" class="card-img padding" alt="storage" style="width: 200px">
+<div class="card-body">
+ <div class="card-override"><h5 class="card-title">Storage</h5></div>   
+</div>
+</div> 
+</a>
+</div>
+                   
+<div class="col-sm-2 py-3  col-lg-3 col-md-3 text-center text-lg-center ">
+<a href="http://127.0.0.1:8000/product/videocard" style="text-decoration:none" >
+<div class="card align-items-center">
+<img src="/static/images/gpu.png" class="card-img padding" alt="video card" style="width: 200px">
+<div class="card-body">
+<div class="card-override"><h5 class="card-title">Video Card</h5></div> 
+</div>
+</div> 
+</a>
+</div>
+               
+<div class="col-sm-2 py-3  col-lg-3 col-md-3 text-center text-lg-center ">
+<a href="http://127.0.0.1:8000/product/case" style="text-decoration:none" >
+<div class="card align-items-center">
+<img src="/static/images/case.png" class="card-img padding" alt="case" style="width: 200px">
+<div class="card-body">
+<div class="card-override"><h5 class="card-title">Case</h5></div>   
+</div>
+</div> 
+</a>
+</div>
+              
+<div class="col-sm-2 py-3  col-lg-3 col-md-3 text-center text-lg-center ">
+<a href="http://127.0.0.1:8000/product/powersupply" style="text-decoration:none" >
+<div class="card align-items-center">
+<img src="/static/images/psu.png" class="card-img padding" alt="power supply" style="width: 200px">
+<div class="card-body">
+<div class="card-override"><h5 class="card-title">Power Supply</h5></div> 
+</div>
+</div> 
+</a>
+</div>
+     
+</div>
+
+      </section>
+  
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+   
+        
+          
+ 
+    
+    <!--jQuery CDN Link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <!--Bootstrap JS cdn link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <!-- Owl Carousel JS Link-->
+    <script src="./js/owl/dist/owl.carousel.js"></script>
+
+    <!--Custom Js link-->
+    <script src="./js/main.js"></script>
+
+    <!--cart js-->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

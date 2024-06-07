@@ -1,0 +1,300 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compitable" content="ie-edge">
+    <meta name="Description" content="Enter your description here"/>
+    <title>CattoTech</title>
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="/static/images/cattotech.png">
+
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Owl CSS Link -->
+    <link rel="stylesheet" href="./css/owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl/dist/assets/owl.theme.default.min.css">
+
+    <!--Custom Css File Link-->
+    <link rel="stylesheet" href="/static/css/responsive-style.css">
+    <link rel="stylesheet" href="./pcbuilder.css">
+<style>
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.p .catto{
+    text-decoration-style: dashed;
+}
+
+
+
+</style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85">
+    <!-- Navbar section -->
+
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="http://127.0.0.1:8000/#home"><img src="/static/images/cattotech-company-logo.png" class="img-fluid" alt="company-logo" width="1000px"></a>
+              <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <span class="navbar-toggler-icon"></span> --> 
+              <i class="fa-sharp fa-solid fa-bars-staggered fa-lg" style="color: #000000;"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu-navbar-nav">
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/#home">Home</a>
+                  </li>
+                
+                
+                 
+                  <li class="nav-item">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" data-bs-theme="light" type="search" placeholder="Keywords..." aria-label="Search">
+                    <button class="btn btn-dark" data-bs-theme="dark" type="submit">Search</button>
+                  </form>
+                </li>
+            
+                
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="http://127.0.0.1:8000/#pcbuilderpage">PC Builder</a>
+                  </li>
+                  </ul>
+
+                  <ul class="navbar-nav">
+                    <li class="nav-item text-center">
+                        <a class="nav-link learn-more-btn btn-extra-header" aria-current="page" href="http://127.0.0.1:8000/login/" target="_blank">Login</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link learn-more-btn " aria-current="page" href="http://127.0.0.1:8000/signup/" target="_blank">Register</a>
+                      </li>
+
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+<!--Title CPU start-->
+    <section id="CPU" class="cpu_wrapper">
+    <div class="brands">
+        <div class="container">
+            <div class="col-12 text-center">
+                <h1 class="cpu_title">Processors</h2>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="browseCPU" class="guides_wrapper">
+        <div class="container">
+          
+                
+                        
+           
+                         <h1 class="builds_title text-center">Browse Through Processors</h1>  
+                       
+                                
+                         <table class="productList--detailed xs-col-12 tablesorter tablesorter-default" id="paginated_table" role="grid">
+                          <thead>
+                            <tr role="row" class="tablesorter-headerRow">
+                                <th class="thcheckbox tablesorter-header sorter-false tablesorter-headerUnSorted th--unsorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="true" unselectable="on" aria-sort="none" style="user-select: none;">
+                                    <div class="tablesorter-header-inner">
+                                    </div>
+                                </th>
+                                <th class="th--sortable tablesorter-header tablesorter-headerUnSorted th--unsorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="paginated_table" unselectable="on" aria-sort="none" aria-label="Name: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                                    <div class="tablesorter-header-inner">
+                                        <span class="sortArrow sortArrow--down">
+                                            <svg class="icon shape-dropdown-arrow">
+                                                <use xlink:href="#shape-dropdown-arrow">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <p>Name</p>
+                                    </div>
+                                </th>
+                                <th></th>
+                                <th></th>
+                                <th class="th--sortable thprice tablesorter-header tablesorter-headerUnSorted th--unsorted" data-column="9" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="paginated_table" unselectable="on" aria-sort="none" aria-label="Price: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                                    <div class="tablesorter-header-inner">
+                                        <span class="sortArrow sortArrow--up">
+                                            <svg class="icon shape-dropdown-arrow">
+                                                <use xlink:href="#shape-dropdown-arrow">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <p>Price</p>
+                                    </div>
+                                </th>
+                                
+                                <th></th>
+                            </tr>
+                            </thead>
+                      <tbody id="category_content" aria-live="polite" aria-relevant="all">
+                        <tr class="tr__product" data-pb-id="329297"></td><td class="td__name"><a href="/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box"><div class="td__imageWrapper"> <div class="td__image"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"><div class="td__image--lg"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"></div></div></div>      
+                            <div class="product"><td class="product_name">Intel Pentium Gold G6405 4.1 GHz Dual-Core LGA 1200 Processor</td>
+                                <td></td>
+                                <td></td>
+                                <td class="product_price">7000৳</td>
+                                <td><button class="learn-more-btn">Add to Cart</button></td>
+                            </div> 
+                        </tr>
+                        
+                            
+                        <tr class="tr__product" data-pb-id="329297"></td><td class="td__name"><a href="/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box"><div class="td__imageWrapper"> <div class="td__image"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"><div class="td__image--lg"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"></div></div></div>      
+                            <div class="product"><td class="product_name">Intel Core i3 6100 6th Gen Processor (Bulk)</td>
+                                <td></td>
+                                <td></td>
+                                <td class="product_price">2400৳</td>
+                                <td><button class="learn-more-btn">Add to Cart</button></td>
+                            </div> 
+                        </tr>
+                        
+                            
+                        <tr class="tr__product" data-pb-id="329297"></td><td class="td__name"><a href="/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box"><div class="td__imageWrapper"> <div class="td__image"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"><div class="td__image--lg"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"></div></div></div>      
+                            <div class="product"><td class="product_name">Intel 8th Generation Core i3-8100 Processor (Bulk)</td>
+                                <td></td>
+                                <td></td>
+                                <td class="product_price">4600৳</td>
+                                <td><button class="learn-more-btn">Add to Cart</button></td>
+                            </div> 
+                        </tr>
+                        
+                            
+                        <tr class="tr__product" data-pb-id="329297"></td><td class="td__name"><a href="/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box"><div class="td__imageWrapper"> <div class="td__image"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"><div class="td__image--lg"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"></div></div></div>      
+                            <div class="product"><td class="product_name">Intel Core i3 7100 7th Gen Processor (Bulk)</td>
+                                <td></td>
+                                <td></td>
+                                <td class="product_price">2900৳</td>
+                                <td><button class="learn-more-btn">Add to Cart</button></td>
+                            </div> 
+                        </tr>
+                        
+                            
+                        <tr class="tr__product" data-pb-id="329297"></td><td class="td__name"><a href="/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box"><div class="td__imageWrapper"> <div class="td__image"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"><div class="td__image--lg"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"></div></div></div>      
+                            <div class="product"><td class="product_name">Intel 3rd Generation Core i7-3770 (3.4 GHz) Processor</td>
+                                <td></td>
+                                <td></td>
+                                <td class="product_price">4300৳</td>
+                                <td><button class="learn-more-btn">Add to Cart</button></td>
+                            </div> 
+                        </tr>
+                        
+                            
+                        <tr class="tr__product" data-pb-id="329297"></td><td class="td__name"><a href="/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box"><div class="td__imageWrapper"> <div class="td__image"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"><div class="td__image--lg"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"></div></div></div>      
+                            <div class="product"><td class="product_name">Intel Core i5 7400 7th Gen Processor (Bulk)</td>
+                                <td></td>
+                                <td></td>
+                                <td class="product_price">6000৳</td>
+                                <td><button class="learn-more-btn">Add to Cart</button></td>
+                            </div> 
+                        </tr>
+                        
+                            
+                        <tr class="tr__product" data-pb-id="329297"></td><td class="td__name"><a href="/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box"><div class="td__imageWrapper"> <div class="td__image"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"><div class="td__image--lg"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"></div></div></div>      
+                            <div class="product"><td class="product_name">Intel Core i5-6402P 2.8 GHz Quad-Core LGA 1151 Processor</td>
+                                <td></td>
+                                <td></td>
+                                <td class="product_price">6500৳</td>
+                                <td><button class="learn-more-btn">Add to Cart</button></td>
+                            </div> 
+                        </tr>
+                        
+                            
+                        <tr class="tr__product" data-pb-id="329297"><td class="td__name"><a href="/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box"><div class="td__imageWrapper"> <div class="td__image"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"><div class="td__image--lg"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"></div></div></div></a></td>      
+                            <div class="product"><td class="product_name">Intel Core i7-4790K 4th Gen Processor</td>
+                                <td></td>
+                                <td></td>
+                                <td class="product_price">6500৳</td>
+                                <td><button class="learn-more-btn">Add to Cart</button></td>
+                            </div> 
+                        </tr>
+                        
+                            
+                        <tr class="tr__product" data-pb-id="329297"></td><td class="td__name"><a href="/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box"><div class="td__imageWrapper"> <div class="td__image"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"><div class="td__image--lg"><img alt="AMD Ryzen 5 5600X" src="//cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg"></div></div></div>      
+                            <div class="product"><td class="product_name">Intel Core i5 4570 4th Generation Processor TRAY</td>
+                                <td></td>
+                                <td></td>
+                                <td class="product_price">2200৳</td>
+                                <td><button class="learn-more-btn">Add to Cart</button></td>
+                            </div> 
+                        </tr>
+                        
+                        <tr class="tr__product" data-pb-id="329297"><td></td></div></div></div>      
+                            <div class="product"><td class="product_name"></td>
+                                <td></td>
+                                <td>Total Price : </td>
+                                <td class="product_price"></td>
+                                <td></td>
+                            </div> 
+                        </tr>
+                        
+                        
+                            
+
+                            
+
+     
+                          </table>
+                           
+    
+    
+    
+                <div class="row">
+                    <div class="col-sm-12 col-lg-12  text-center text-lg-center">
+                    <div class="my-4">
+                    <a class="learn-more-btn"  href="#">Browse More</a>
+                </div>
+            </div>   
+        </div>
+    
+                  </div>
+    </section>
+    
+
+    
+
+
+
+
+
+
+
+
+
+   
+        
+          
+ 
+    
+    <!--jQuery CDN Link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <!--Bootstrap JS cdn link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <!-- Owl Carousel JS Link-->
+    <script src="./js/owl/dist/owl.carousel.js"></script>
+
+    <!--Custom Js link-->
+    <script src="./js/main.js"></script>
+    <!--CSV loader-->
+    <!--script src="./csv.js"></script-->
+    
+
+</body>
+
+</html>
